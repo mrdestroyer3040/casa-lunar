@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#211a2b">
   <meta name="description" content="Lectura de manos, rituales de bienestar, encantos y acompañamiento espiritual desde el respeto y la intención consciente.">
-  <title>Casa Lunar — rituales y lectura intuitiva</title>
+  <title>Ciencia y Verdad — rituales y lectura intuitiva</title>
   <style>
     :root {
       color-scheme: light;
@@ -54,9 +54,9 @@
     .nav-links .nav-cta { padding: 10px 17px; border: 1px solid rgba(255,255,255,.5); border-radius: 999px; color: white; }
     .menu-toggle { display: none; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,.5); border-radius: 50%; background: transparent; color: white; font-size: 1.2rem; cursor: pointer; }
 
-    .hero { position: relative; min-height: 740px; overflow: hidden; display: flex; align-items: center; padding: 140px 0 88px; background: radial-gradient(ellipse at 78% 45%, rgba(125,89,131,.38), transparent 34%), radial-gradient(ellipse at 12% 95%, rgba(161,105,100,.17), transparent 35%), linear-gradient(125deg, #211a2b, #382a42 58%, #2e2339); color: white; }
-    .hero::before { position: absolute; content: ""; width: min(48vw, 600px); aspect-ratio: 1; right: 5%; top: 16%; border: 1px solid rgba(219,192,141,.28); border-radius: 50%; box-shadow: 0 0 0 34px rgba(219,192,141,.035), 0 0 0 70px rgba(219,192,141,.025); }
-    .hero::after { position: absolute; content: "☾"; top: 23%; right: 18%; color: #e2c38c; font-size: clamp(15rem, 31vw, 28rem); line-height: .8; transform: rotate(-21deg); opacity: .86; text-shadow: 0 0 90px rgba(220,185,124,.12); }
+    .hero { position: relative; min-height: 740px; overflow: hidden; display: flex; align-items: center; padding: 140px 0 88px; background: #211a2b url("hero-consulta.jpg") 62% center / cover no-repeat; color: white; }
+    .hero::before { position: absolute; inset: 0; content: ""; background: linear-gradient(90deg, rgba(28,20,34,.97) 0%, rgba(34,24,40,.88) 34%, rgba(34,24,40,.28) 74%, rgba(34,24,40,.10) 100%), linear-gradient(0deg, rgba(21,15,26,.34), transparent 45%); }
+    .hero::after { content: none; }
     .hero-inner { position: relative; z-index: 1; }
     .hero .eyebrow { color: #e1c993; }
     .hero h1 em { color: #e2c38c; font-weight: 400; }
@@ -80,12 +80,13 @@
     .section-head h2 { max-width: 570px; margin: 15px 0 0; }
     .section-head p { max-width: 350px; margin: 0 0 6px; color: var(--muted); }
     .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-    .card { min-height: 320px; padding: 27px 24px; border: 1px solid rgba(48,36,59,.12); border-radius: 4px; background: rgba(255,255,255,.52); transition: transform .2s ease, box-shadow .2s ease; }
+    .card { min-height: 445px; overflow: hidden; padding: 0; border: 1px solid rgba(48,36,59,.12); border-radius: 4px; background: rgba(255,255,255,.66); transition: transform .2s ease, box-shadow .2s ease; }
     .card:hover { transform: translateY(-5px); box-shadow: 0 18px 38px rgba(48,36,59,.08); }
-    .card-icon { display: grid; width: 52px; height: 52px; place-items: center; margin-bottom: 29px; border: 1px solid rgba(199,155,91,.52); border-radius: 50%; color: #896492; font-family: var(--serif); font-size: 1.5rem; }
-    .card h3 { min-height: 56px; margin-bottom: 14px; }
+    .card-photo { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .card-body { display: flex; min-height: 245px; flex-direction: column; padding: 20px 20px 22px; }
+    .card h3 { min-height: 0; margin-bottom: 12px; }
     .card p { margin: 0; color: var(--muted); font-size: .94rem; }
-    .card-link { display: inline-block; margin-top: 19px; color: #6f5179; font-size: .83rem; font-weight: 750; text-decoration: none; }
+    .card-link { display: inline-block; margin-top: auto; padding-top: 18px; color: #6f5179; font-size: .83rem; font-weight: 750; text-decoration: none; }
     .card-link span { margin-left: 5px; }
 
     .ritual { position: relative; overflow: hidden; padding: 112px 0; background: #e5d7e6; }
@@ -144,8 +145,7 @@
 
     @media (max-width: 900px) {
       .hero { min-height: 680px; }
-      .hero::before { right: -12%; width: 58vw; }
-      .hero::after { right: 5%; }
+      .hero { background-position: 64% center; }
       .cards { grid-template-columns: repeat(2, 1fr); }
       .ritual-content, .about-grid, .contact-grid { gap: 45px; }
       .moon-panel { min-height: 370px; }
@@ -159,8 +159,8 @@
       .nav-links a { padding: 13px 0; }
       .nav-links .nav-cta { margin-top: 8px; padding: 10px 16px; text-align: center; }
       .hero { min-height: 700px; padding-top: 130px; }
-      .hero::before { top: 17%; right: -32%; width: 88vw; }
-      .hero::after { top: 18%; right: -4%; font-size: 16rem; opacity: .33; }
+      .hero { background-position: 70% center; }
+      .hero::before { background: linear-gradient(90deg, rgba(28,20,34,.92), rgba(34,24,40,.72)), linear-gradient(0deg, rgba(21,15,26,.32), transparent 50%); }
       .hero h1 { max-width: 530px; font-size: clamp(3.3rem, 15vw, 5.3rem); }
       .hero .lede { max-width: 420px; }
       .hero-note { margin-top: 39px; font-size: .72rem; }
@@ -169,7 +169,8 @@
       .section-head { display: block; margin-bottom: 30px; }
       .section-head p { margin-top: 16px; }
       .cards { gap: 12px; }
-      .card { min-height: 305px; padding: 22px 17px; }
+      .card { min-height: 0; }
+      .card-body { min-height: 235px; padding: 19px 17px 21px; }
       .card h3 { font-size: 1.45rem; }
       .ritual { padding: 82px 0; }
       .ritual-content, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
@@ -182,8 +183,9 @@
     }
     @media (max-width: 420px) {
       .cards { grid-template-columns: 1fr; }
-      .card { min-height: auto; }
-      .card h3 { min-height: auto; }
+      .card { min-height: 0; }
+      .card-photo { aspect-ratio: 1.9 / 1; }
+      .card-body { min-height: 220px; }
       .form-row, .values { grid-template-columns: 1fr; gap: 0; }
       .hero-actions { align-items: stretch; flex-direction: column; max-width: 270px; }
       .hero-actions .button { width: 100%; }
@@ -196,7 +198,7 @@
 <body>
   <header>
     <nav class="nav wrap" aria-label="Navegación principal">
-      <a class="brand" href="#inicio" aria-label="Casa Lunar, inicio"><span class="brand-mark" aria-hidden="true">☾</span> Casa Lunar</a>
+      <a class="brand" href="#inicio" aria-label="Ciencia y Verdad, inicio"><span class="brand-mark" aria-hidden="true">✦</span> Ciencia y Verdad</a>
       <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">☰</button>
       <div class="nav-links" id="nav-links">
         <a href="#servicios">Servicios</a>
@@ -238,28 +240,32 @@
         </div>
         <div class="cards">
           <article class="card">
-            <div class="card-icon" aria-hidden="true">♡</div>
-            <h3>Lectura de manos</h3>
-            <p>Una mirada simbólica a las líneas de tus manos para explorar talentos, ciclos y preguntas que hoy te acompañan.</p>
-            <a class="card-link" href="#contacto" data-service="Lectura de manos">Consultar <span>↗</span></a>
+            <img class="card-photo" src="lectura-manos.jpg" alt="Una consulta de lectura de manos a la luz de una vela" loading="lazy">
+            <div class="card-body"><h3>Lectura de manos</h3>
+              <p>Una mirada simbólica a las líneas de tus manos para explorar talentos, ciclos y preguntas que hoy te acompañan.</p>
+              <a class="card-link" href="#contacto" data-service="Lectura de manos">Consultar <span>↗</span></a>
+            </div>
           </article>
           <article class="card">
-            <div class="card-icon" aria-hidden="true">✺</div>
-            <h3>Curación energética</h3>
-            <p>Un ritual de bienestar y relajación para hacer una pausa, renovar tu intención y reconectar contigo.</p>
-            <a class="card-link" href="#contacto" data-service="Curación energética">Consultar <span>↗</span></a>
+            <img class="card-photo" src="curacion-energetica.jpg" alt="Momento de descanso durante un ritual simbólico de bienestar" loading="lazy">
+            <div class="card-body"><h3>Curación energética</h3>
+              <p>Un ritual de bienestar y relajación para hacer una pausa, renovar tu intención y reconectar contigo.</p>
+              <a class="card-link" href="#contacto" data-service="Curación energética">Consultar <span>↗</span></a>
+            </div>
           </article>
           <article class="card">
-            <div class="card-icon" aria-hidden="true">☽</div>
-            <h3>Amarres conscientes</h3>
-            <p>Rituales de unión enfocados en el amor propio y los vínculos recíprocos; siempre con respeto por la voluntad de cada persona.</p>
-            <a class="card-link" href="#contacto" data-service="Amarres conscientes">Consultar <span>↗</span></a>
+            <img class="card-photo" src="amarre-consciente.jpg" alt="Dos manos junto a un hilo rojo suelto como símbolo de afecto recíproco" loading="lazy">
+            <div class="card-body"><h3>Amarres conscientes</h3>
+              <p>Rituales de unión enfocados en el amor propio y los vínculos recíprocos; siempre con respeto por la voluntad de cada persona.</p>
+              <a class="card-link" href="#contacto" data-service="Amarres conscientes">Consultar <span>↗</span></a>
+            </div>
           </article>
           <article class="card">
-            <div class="card-icon" aria-hidden="true">✧</div>
-            <h3>Encantos e intenciones</h3>
-            <p>Pequeños rituales simbólicos para acompañar nuevos comienzos, abrir espacio a la abundancia o afirmar una meta.</p>
-            <a class="card-link" href="#contacto" data-service="Encantos e intenciones">Consultar <span>↗</span></a>
+            <img class="card-photo" src="encantos.jpg" alt="Amuleto artesanal con lavanda, pétalos y una vela" loading="lazy">
+            <div class="card-body"><h3>Encantos e intenciones</h3>
+              <p>Pequeños rituales simbólicos para acompañar nuevos comienzos, abrir espacio a la abundancia o afirmar una meta.</p>
+              <a class="card-link" href="#contacto" data-service="Encantos e intenciones">Consultar <span>↗</span></a>
+            </div>
           </article>
         </div>
       </div>
@@ -287,7 +293,7 @@
           <span class="moon-caption">Intención · Respeto · Presencia</span>
         </div>
         <div class="about-copy">
-          <span class="eyebrow">La esencia de Casa Lunar</span>
+          <span class="eyebrow">La esencia de Ciencia y Verdad</span>
           <h2 id="about-title">Un lugar para ser escuchada.</h2>
           <p>Creo en los rituales como una forma de poner atención a lo que sentimos y dar significado a nuestros propósitos. Aquí encontrarás escucha honesta, cuidado y un trato cálido, sin juicios.</p>
           <div class="values">
@@ -326,7 +332,7 @@
   <footer>
     <div class="wrap">
       <div class="footer-inner">
-        <span class="footer-brand">☾ Casa Lunar</span>
+        <span class="footer-brand">✦ Ciencia y Verdad</span>
         <span>Un espacio de escucha e intención.</span>
         <div class="footer-links"><a href="#servicios">Servicios</a><a href="#contacto">Contacto</a></div>
       </div>
